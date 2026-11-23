@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1d3a"/><stop offset="1" stop-color="#132f5c"/></linearGradient>
+    <style>.row{animation:hl 4s steps(1) infinite;fill:transparent}.r2{animation-delay:-1.33s}.r3{animation-delay:-2.66s}@keyframes hl{0%{fill:#38bdf8;fill-opacity:.25}33%{fill:transparent}}
+      .rel{stroke-dasharray:6 6;animation:d 1.2s linear infinite}@keyframes d{to{stroke-dashoffset:-12}}</style>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <!-- cylinder -->
+  <g transform="translate(70 70)" fill="none" stroke="#38bdf8" stroke-width="3">
+    <ellipse cx="40" cy="10" rx="40" ry="12" fill="#0b1d3a"/><path d="M0 10v70c0 7 18 12 40 12s40-5 40-12V10"/><path d="M0 34c0 7 18 12 40 12s40-5 40-12M0 58c0 7 18 12 40 12s40-5 40-12"/>
+  </g>
+  <text x="176" y="112" font-family="Consolas, Menlo, monospace" font-size="18" fill="#7dd3fc">SELECT * FROM labs WHERE course = 'CSE302';</text>
+  <text x="66" y="210" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="68" font-weight="800" fill="#f0f9ff">Database Systems</text>
+  <text x="70" y="256" font-family="Consolas, Menlo, monospace" font-size="17" fill="#94a3b8">CSE302 · SQL · PL/SQL · Oracle · ER modelling</text>
+  <!-- ER tables -->
+  <g font-family="Consolas, Menlo, monospace" font-size="13">
+    <g transform="translate(780 40)">
+      <rect width="160" height="120" rx="6" fill="#0f2547" stroke="#38bdf8"/><rect width="160" height="28" rx="6" fill="#38bdf8"/><text x="12" y="19" fill="#0b1d3a" font-weight="700">student</text>
+      <rect class="row" x="1" y="32" width="158" height="24"/><text x="12" y="49" fill="#fde047">🔑 id</text>
+      <rect class="row r2" x="1" y="60" width="158" height="24"/><text x="12" y="77" fill="#e0f2fe">name</text>
+      <rect class="row r3" x="1" y="88" width="158" height="24"/><text x="12" y="105" fill="#e0f2fe">dept_id</text>
+    </g>
+    <g transform="translate(1000 150)">
+      <rect width="160" height="120" rx="6" fill="#0f2547" stroke="#a78bfa"/><rect width="160" height="28" rx="6" fill="#a78bfa"/><text x="12" y="19" fill="#0b1d3a" font-weight="700">department</text>
+      <text x="12" y="49" fill="#fde047">🔑 dept_id</text><text x="12" y="77" fill="#e0f2fe">title</text><text x="12" y="105" fill="#e0f2fe">building</text>
+    </g>
+    <g transform="translate(780 190)">
+      <rect width="160" height="92" rx="6" fill="#0f2547" stroke="#34d399"/><rect width="160" height="28" rx="6" fill="#34d399"/><text x="12" y="19" fill="#0b1d3a" font-weight="700">enrolls</text>
+      <text x="12" y="49" fill="#e0f2fe">student_id</text><text x="12" y="77" fill="#e0f2fe">course_id</text>
+    </g>
+    <path class="rel" d="M940 136h30v74h30" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <path class="rel" d="M860 160v30" fill="none" stroke="#34d399" stroke-width="2"/>
+    <text x="968" y="128" fill="#a78bfa">N:1</text>
+  </g>
+</svg>
